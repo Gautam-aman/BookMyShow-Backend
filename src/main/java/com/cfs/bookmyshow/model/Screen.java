@@ -33,7 +33,7 @@ public class Screen {
     @OneToMany(mappedBy = "screen" , cascade = CascadeType.ALL)
     private List<Show> shows;
 
-    @OneToMany
+    @OneToMany(mappedBy = "screen" , cascade = CascadeType.ALL)
     private List<Seat>  seats;
 
 }

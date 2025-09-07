@@ -36,7 +36,7 @@ public class Booking {
     private Double Price;
 
     @ManyToOne
-    @Column(name = "show_id" , nullable = false)
+    @JoinColumn (name = "show_id" , nullable = false)
     private User user;
 
     @OneToMany(mappedBy = "booking" , cascade = CascadeType.ALL)

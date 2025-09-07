@@ -12,7 +12,7 @@ import java.lang.annotation.Documented;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "show_ seat")
+@Table(name = "show_seats")
 public class ShowSeat {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,6 +22,7 @@ public class ShowSeat {
     @JoinColumn(name = "show_id", nullable = false)
     private Show show;
 
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="seat_id" , nullable = false)
     private Seat seat;
 
