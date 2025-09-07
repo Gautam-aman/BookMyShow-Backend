@@ -3,6 +3,8 @@
 A backend project inspired by **BookMyShow**, built with **Java, Spring Boot, JPA, and MySQL**.  
 Currently in the initial stage with **entity models** and **repository layer** implemented.
 
+DataBase Design : https://dbdiagram.io/d/68bddd2b61a46d388edaa6da
+
 ---
 
 ## 🛠️ Tech Stack
