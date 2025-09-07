@@ -1,0 +1,50 @@
+package com.cfs.bookmyshow.model;
+
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.List;
+
+@Entity
+@Table(name="bookings")
+@Data // Create Getter and Setter At RunTime
+@NoArgsConstructor
+@AllArgsConstructor // These are functions of Lombok
+public class Booking {
+
+    @Id
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false, unique = true)
+    private String BookingNumber;
+
+    @Column(nullable = false)
+    private LocalDateTime BookingTime;
+
+
+
+    @Column(nullable = false)
+    private String Status; // Confirmed Pending Cancelled
+
+    @Column(nullable = false)
+    private Double Price;
+
+    @ManyToOne
+    @Column(name = "show_id" , nullable = false)
+    private User user;
+
+    @OneToMany(mappedBy = "booking" , cascade = CascadeType.ALL)
+    private List<ShowSeat> showSeats;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "payment_id")
+    private Payment payment;
+
+}
+
