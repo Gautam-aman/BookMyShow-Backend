@@ -1,33 +1,39 @@
-🎟️ BookMyShow Backend (Work in Progress)
+# 🎟️ BookMyShow Backend (Work in Progress)
 
-This is a backend project inspired by BookMyShow, built using Java, Spring Boot, JPA, and MySQL.
+A backend project inspired by **BookMyShow**, built with **Java, Spring Boot, JPA, and MySQL**.  
+Currently in the initial stage with **entity models** and **repository layer** implemented.
 
-Currently, the project includes:
+---
 
-Entity Models for Users, Movies, Theaters, Shows, and Bookings.
+## 🛠️ Tech Stack
+- **Java** (Spring Boot)
+- **MySQL** (Database)
+- **JPA/Hibernate** (ORM)
+- **Maven** (Build Tool)
 
-Repository Layer using Spring Data JPA for database operations.
+---
 
-🛠️ Tech Stack
+## 📂 Current Progress
+- ✅ Created entity models for:
+  - User
+  - Movie
+  - Theater
+  - Show
+  - Booking
+- ✅ Repository layer using Spring Data JPA
+- 🚧 Service & Controller layers (coming soon)
 
-Java (Spring Boot)
+---
 
-MySQL (Database)
+## 📌 Next Steps
+- Implement business logic in Service Layer  
+- Add REST APIs for movie, show, and booking management  
+- Setup database schema & relationships  
+- Develop seat booking and payment simulation  
 
-JPA (ORM)
+---
 
-Maven (Build tool)
+## 🚧 Project Status
+This project is **under development**. New features and APIs will be added step by step.  
 
-📌 Next Steps
-
-Implement service layer & business logic
-
-Add REST API controllers
-
-Setup database schema & relationships
-
-Develop seat booking & payment simulation
-
-🚧 Status
-
-🔨 Work in Progress – currently focusing on database models & repository layer.
+Stay tuned for updates! 🚀
