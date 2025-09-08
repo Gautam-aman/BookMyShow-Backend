@@ -15,12 +15,15 @@ public class BookingDto {
 
     private Long id;
     private String bookingName;
+    private String setBookingNumber;
     private LocalDateTime bookingTime;
+
     private Userdto user;
     private Showdto show;
+
     private String status;
     private double totalAmount;
-    private List<ShowSeat> seats;
+    private List<ShowSeatdto> seats;
     private Paymentdto payment;
 
 

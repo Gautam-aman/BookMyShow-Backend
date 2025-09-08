@@ -12,6 +12,6 @@ public class Theaterdto {
     private Long id;
     private String name;
     private String address;
-    private String totalSeats;
+    private Integer totalScreens;
     private String city;
 }

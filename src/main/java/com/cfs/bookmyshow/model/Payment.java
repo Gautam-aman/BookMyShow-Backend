@@ -37,4 +37,6 @@ public class Payment {
     @OneToOne (mappedBy = "payment")
     private Booking booking;
 
+    @Column(nullable = false)
+    private String status;
 }
