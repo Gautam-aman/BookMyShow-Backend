@@ -20,7 +20,7 @@ public class Payment {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String TransactionId;
+    private String transactionId;
 
     @Column(nullable = false)
     private Double amount;

@@ -22,7 +22,7 @@ public class Booking {
     private Long id;
 
     @Column(nullable = false, unique = true)
-    private String BookingNumber;
+    private String bookingNumber;
 
     @Column(nullable = false)
     private LocalDateTime BookingTime;
