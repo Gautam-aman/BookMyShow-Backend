@@ -1,41 +1,64 @@
-# 🎟️ BookMyShow Backend (Work in Progress)
+# 🎬 BookMyShow Backend
 
-A backend project inspired by **BookMyShow**, built with **Java, Spring Boot, JPA, and MySQL**.  
-Currently in the initial stage with **entity models** and **repository layer** implemented.
+A complete backend implementation of a **movie ticket booking system** inspired by BookMyShow.  
+Built with **Java Spring Boot**, **JPA (Hibernate)**, and **MySQL**, this project provides REST APIs for managing **users, movies, theaters, shows, and bookings** with seat availability and booking validations.
 
-DataBase Design : https://dbdiagram.io/d/68bddd2b61a46d388edaa6da
+> [Database Diagram](https://dbdiagram.io/d/68bddd2b61a46d388edaa6da)
+
+---
+
+## 🚀 Features
+- 👤 **User Management** – Register and manage users  
+- 🎥 **Movie Management** – Add, update, and list movies  
+- 🏛️ **Theater & Show Management** – Map movies to theaters with showtimes  
+- 🎟️ **Ticket Booking** – Book seats with validation to avoid double booking  
+- 💳 **Payment Simulation** – Simulated flow for confirming bookings  
+- 🔐 **Validation & Error Handling** – Prevent invalid operations  
+- 📑 **RESTful APIs** – Clean and structured endpoints  
 
 ---
 
 ## 🛠️ Tech Stack
-- **Java** (Spring Boot)
-- **MySQL** (Database)
-- **JPA/Hibernate** (ORM)
-- **Maven** (Build Tool)
+- **Language:** Java  
+- **Framework:** Spring Boot  
+- **ORM:** Spring Data JPA (Hibernate)  
+- **Database:** MySQL  
+- **Build Tool:** Maven  
+- **API Documentation:** Swagger / OpenAPI  
 
 ---
 
-## 📂 Current Progress
-- ✅ Created entity models for:
-  - User
-  - Movie
-  - Theater
-  - Show
-  - Booking
-- ✅ Repository layer using Spring Data JPA
-- 🚧 Service & Controller layers (coming soon)
+## 📊 Database Design
+Entities included in the system:
+- **User**  
+- **Movie**  
+- **Theater**  
+- **Show**  
+- **Seat**  
+- **Booking**  
 
 ---
 
-## 📌 Next Steps
-- Implement business logic in Service Layer  
-- Add REST APIs for movie, show, and booking management  
-- Setup database schema & relationships  
-- Develop seat booking and payment simulation  
+## ⚡ API Endpoints (Sample)
+### 🎥 Movies
+- `POST /api/movies` → Add a new movie  
+- `GET /api/movies` → Get all movies  
+- `GET /api/movies/{id}` → Get movie by ID  
+
+### 🏛️ Theaters & Shows
+- `POST /api/theaters` → Add a theater  
+- `POST /api/shows` → Add a show to a theater  
+- `GET /api/shows/{theaterId}` → List shows for a theater  
+
+### 🎟️ Bookings
+- `POST /api/bookings` → Book tickets  
+- `GET /api/bookings/{userId}` → Get all bookings of a user  
 
 ---
 
-## 🚧 Project Status
-This project is **under development**. New features and APIs will be added step by step.  
+## 🛠️ Setup & Installation
 
-Stay tuned for updates! 🚀
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Gautam-aman/BookMyShow-Backend.git
+   cd BookMyShow-Backend
