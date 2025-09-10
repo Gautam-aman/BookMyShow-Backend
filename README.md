@@ -62,3 +62,15 @@ Entities included in the system:
    ```bash
    git clone https://github.com/Gautam-aman/BookMyShow-Backend.git
    cd BookMyShow-Backend
+
+   ## 🛠️ Setup & Installation
+
+### 1. Configure MySQL Database
+- Create a database in MySQL (e.g., `bookmyshow_db`).
+- Update the `application.properties` file with your MySQL credentials:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/bookmyshow_db
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=update
