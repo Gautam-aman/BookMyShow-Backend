@@ -21,16 +21,16 @@ import java.util.stream.Collectors;
 @Service
 public class ShowService {
 
-    @Autowired
+    //@Autowired
     private MovieRepository movieRepository;
 
-    @Autowired
+   // @Autowired
     private ScreenRepository screenRepository;
 
-    @Autowired
+   // @Autowired
     private ShowRepository showRepository;
 
-    @Autowired
+  //  @Autowired
     private ShowSeatRepository showSeatRepository;
 
 

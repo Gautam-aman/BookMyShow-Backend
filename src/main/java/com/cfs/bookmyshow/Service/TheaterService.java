@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Service
 public class TheaterService {
 
-    @Autowired
+   // @Autowired
     private TheaterRepository theaterRepository;
 
     public Theaterdto createTheater(Theaterdto theaterdto) {

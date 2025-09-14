@@ -18,7 +18,7 @@ import java.util.List;
 @RequestMapping("/api/movies")
 public class MoviesController {
 
-    @Autowired
+    //@Autowired
     private MovieService movieService;
 
     @PostMapping

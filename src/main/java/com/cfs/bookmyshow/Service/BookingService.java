@@ -24,16 +24,16 @@ import java.util.stream.Collectors;
 @Service
 public class BookingService {
 
-    @Autowired
+    //@Autowired
     private UserRepository userRepository;
 
-    @Autowired
+    //@Autowired
     private ShowRepository showRepository;
 
-    @Autowired
+   // @Autowired
     private ShowSeatRepository showSeatRepository;
 
-    @Autowired
+   // @Autowired
     private BookingRepository bookingRepository;
 
     @Transactional
@@ -68,7 +68,6 @@ public class BookingService {
         payment.setTransactionId(UUID.randomUUID().toString());
 
         //Booking
-
         Booking booking = new Booking();
         booking.setUser(user);
         booking.setShow(show);

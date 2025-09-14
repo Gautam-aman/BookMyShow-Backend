@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Service
 public class MovieService {
 
-    @Autowired
+    //@Autowired
     private MovieRepository movieRepository;
 
    public Moviedto createMovie(Moviedto moviedto){
